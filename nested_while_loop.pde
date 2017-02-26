@@ -1,13 +1,10 @@
 size(500, 500);
-int number = 0;
-while(number < 10){
-  int number2 = 0;
-  while(number2 < 10){
-    rect(number * 50, number2 * 50, 50, 50);
-    println( "(" + number + "," +  number2 + ")");
-    number2++;
+int col = 0;  // VARIABLE DECLARATION
+while(col < 10){  // EXPRESSION 
+  int row = 0;   
+  while(row < 10){
+    rect(col * 50, row* 50, 50, 50);
+    row++;
   }
-  println("starting next row");
-  number++;
-  
+  col++; // INCREMENT
 }
