@@ -1,10 +1,10 @@
 size(500, 500);
-
-// SIMPLE FOR LOOP
-for(int number = 0; number < 10; number++){
-  println("Start next row");
-  for(int number2 = 0; number2 < 10; number2++){
-    rect(number * 50, number2 *50, 50, 50);
-    println("(" + number + " , " + number2 + ")" );
+// create 10 x 10 rectangles on a canvas
+for(int col = 0;col < 10;col++){
+  for(int row = 0;row < 10;row++){
+    rect(col *50, row*50, 50, 50);
   }
 }
+
+  
+ 
